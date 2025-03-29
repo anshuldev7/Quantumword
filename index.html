@@ -9,12 +9,22 @@
 <body class="dark-theme">
     <div class="container">
         <h2>QuantumWord - Password Generator</h2>
+        
+        <label for="length">Password Length:</label>
         <input type="number" id="length" placeholder="Enter password length" min="4" max="20">
+        
         <button onclick="generatePassword()">Generate Password</button>
+        
         <input type="text" id="password" readonly>
+        <button onclick="copyPassword()">Copy to Clipboard</button>
+        
+        <p id="strength">Strength: <span id="strength-text">-</span></p>
+        
         <button onclick="toggleTheme()">Toggle Theme</button>
     </div>
-    <p class="footer-text">Secure your accounts effortlessly! Bookmark this page and come back anytime for a strong, random password. 🔒✨</p>
+
+    <p class="footer-text">🔒 Secure your accounts effortlessly! Bookmark this page and return anytime for a strong, random password. 🚀✨</p>
+    
     <script src="script.js"></script>
 </body>
 </html>
