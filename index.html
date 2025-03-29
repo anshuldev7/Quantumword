@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuantumWord - Secure Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    <div class="container">
+        <h2>QuantumWord - Password Generator</h2>
+        <input type="number" id="length" placeholder="Enter password length" min="4" max="20">
+        <button onclick="generatePassword()">Generate Password</button>
+        <input type="text" id="password" readonly>
+        <button onclick="toggleTheme()">Toggle Theme</button>
+    </div>
+    <p class="footer-text">Secure your accounts effortlessly! Bookmark this page and come back anytime for a strong, random password. 🔒✨</p>
+    <script src="script.js"></script>
+</body>
+</html>
