@@ -26,17 +26,22 @@ input {
     color: #fff;
 }
 
+/* Button Animation (Premium Pop-Up Effect) */
 button {
     cursor: pointer;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-button:active {
-    transform: scale(0.95);
+button:hover {
+    transform: scale(1.05);
     box-shadow: 0px 0px 15px rgba(0, 255, 153, 0.7);
 }
 
-/* Themes */
+button:active {
+    transform: scale(0.95);
+}
+
+/* Dark Theme */
 .dark-theme {
     background-color: #121212;
     color: #00ff99;
@@ -56,6 +61,7 @@ button:active {
     background: #00cc77;
 }
 
+/* Light Theme */
 .light-theme {
     background-color: #ffffff;
     color: #000000;
@@ -73,6 +79,16 @@ button:active {
 
 .light-theme button:hover {
     background: #333333;
+}
+
+/* Password Strength Indicator */
+#strength {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#strength-text {
+    color: red;
 }
 
 /* Footer Text */
